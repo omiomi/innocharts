@@ -10,3 +10,15 @@ module.exports = appInfo => {
 
   return config;
 };
+
+
+// config/config.default.js
+exports.view = {
+
+  defaultViewEngine: 'nunjucks',
+
+  mapping: {
+    '.tpl': 'nunjucks',
+  },
+};
+
