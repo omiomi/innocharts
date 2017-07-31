@@ -1,16 +1,16 @@
 // app/controller/news.js
-'use strict'; 
+"use strict"; 
 
 module.exports = app => {
-  class HelloController extends app.Controller {
-    * index() {
-      const ctx = this.ctx;
-      yield ctx.render('hello.xtpl', {
-          data: 'world',
-       });
-    }
+	class HelloController extends app.Controller {
+		* index() {
+			const ctx = this.ctx;
+			yield ctx.render("hello.xtpl", {
+				data: "world",
+			});
+		}
   }
-  return HelloController;
+	return HelloController;
 };
 
 

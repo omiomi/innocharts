@@ -8,7 +8,7 @@ innocharts
 
 see [egg docs][egg] for more detail.
 
-###1、 Development
+### Development
 ```shell
 $ npm install
 $ npm run dev

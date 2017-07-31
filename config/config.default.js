@@ -1,24 +1,47 @@
-'use strict';
+"use strict";
 
 module.exports = appInfo => {
-  const config = {};
+	const config = {};
 
   // should change to your own
-  config.keys = appInfo.name + '_1494929118566_1788';
+	config.keys = appInfo.name + "_1494929118566_1788";
 
   // add your config here
 
-  return config;
+	return config;
 };
 
 
 // config/config.default.js
-exports.view = {
+module.exports.view = {
 
-  defaultViewEngine: 'nunjucks',
+	defaultViewEngine: "jade",
 
-  mapping: {
-    '.tpl': 'nunjucks',
-  },
+	mapping: {
+		".jade": "jade",
+	},
 };
 
+/*
+module.exports.view = {
+
+	defaultViewEngine: "nunjucks",
+
+	mapping: {
+		".tpl": "nunjucks",
+	},
+};
+
+*/
+
+//mount middleware
+module.exports.middleware = [
+	"robot",
+];
+
+//middleware config
+module.exports.robot = {
+	ua: [
+  	/Baiduspider/i,
+	],
+};
