@@ -39,9 +39,3 @@ module.exports.middleware = [
 	"robot",
 ];
 
-//middleware config
-module.exports.robot = {
-	ua: [
-  	/Baiduspider/i,
-	],
-};
