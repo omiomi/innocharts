@@ -12,17 +12,10 @@ module.exports = appInfo => {
 };
 
 
-// config/config.default.js
-module.exports.view = {
+exports.keys = 'fvExsf-FJxblpd356iwtMwWj';
 
-	defaultViewEngine: "jade",
+// 应用nunjucks 模板
 
-	mapping: {
-		".jade": "jade",
-	},
-};
-
-/*
 module.exports.view = {
 
 	defaultViewEngine: "nunjucks",
@@ -32,7 +25,6 @@ module.exports.view = {
 	},
 };
 
-*/
 
 //mount middleware
 module.exports.middleware = [
