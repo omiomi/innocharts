@@ -36,3 +36,5 @@ $ EGG_SERVER_ENV=prod npm start
 #### 练习用node.js和egg.js和ES6
 
 #### 2017-8-2  练习用模板1
+
+#### 2017-9-5  练习用模板1
