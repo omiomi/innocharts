@@ -9,10 +9,14 @@
 	d3.json("https://unpkg.com/us-atlas@1/us/10m.json", function(error, us) {
 		if (error) throw error;
 
-		context.beginPath();
-		path(topojson.mesh(us));
-		context.stroke();
+			drawcanvas(us);
 	});
+
+	function drawcanvas(s) {
+			context.beginPath();
+			path(topojson.mesh(s));
+			context.stroke();
+		}
 
 </script>
 </body>
